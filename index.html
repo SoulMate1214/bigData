@@ -1,0 +1,754 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="css/BigData.css" rel="stylesheet" type="text/css"/>
+    <link href="css/index.css" rel="stylesheet" type="text/css"/>
+    <link href="css/index01.css" rel="stylesheet" type="text/css"/>
+    <link href="css/Security_operation.css" rel="stylesheet" type="text/css"/>
+    <link href="js/artDialog/skins/default.css" rel="stylesheet" type="text/css"/>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
+    <link href="js/bstable/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="js/bstable/css/bootstrap-table.css" rel="stylesheet" type="text/css"/>
+    <meta charset="UTF-8">
+    <title>云监控平台</title>
+</head>
+<body>
+<div class="data_bodey">
+    <div class="index_nav">
+        <!--头部导航栏-->
+        <ul style="height: 30px; margin-bottom: 0px;">
+            <li class="l_left total_chose_fr nav_active">实时监测</li>
+            <li class="l_left total_chose_pl">统计分析一</li>
+            <li class="l_left total_chose_pl">统计分析二</li>
+            <div class="map_title_box">
+                <div class="map_title_innerbox">
+                    <div class="map_title" style="font-size: 2.0rem">云监控平台</div>
+                </div>
+            </div>
+            <li class="r_right total_chose_pl">统计分析五</li>
+            <li class="r_right total_chose_pl">统计分析四</li>
+            <li class="r_right total_chose_pl">统计分析三</li>
+        </ul>
+        <!--下方搜索框-->
+        <div class="total_chose_box" style="display: none;">
+            <div style="height: 32px;"></div>
+            <span class="chose_tltle">请选择年份：</span>
+            <select class="year_chose">
+                <option>2017</option>
+                <option>2016</option>
+                <option>2015</option>
+                <option>2014</option>
+                <option>2013</option>
+                <option>2012</option>
+            </select>
+            <span class="chose_tltle">请输入月份：</span>
+            <input class="chose_text_in">
+            <span class="chose_tltle">请选择区域：</span>
+            <select class="year_chose">
+                <option> 北京市</option>
+                <option>自贡市</option>
+                <option>攀枝花市</option>
+                <option>泸州市</option>
+                <option>德阳市</option>
+                <option>绵阳市</option>
+                <option>广元市</option>
+                <option>遂宁市</option>
+                <option>内江市</option>
+                <option>乐山市</option>
+                <option>南充市</option>
+                <option>宜宾市</option>
+                <option>广安市</option>
+                <option>达州市</option>
+                <option>巴中市</option>
+                <option>雅安市</option>
+                <option>眉山市</option>
+                <option>资阳市</option>
+                <option>阿坝州</option>
+                <option>甘孜州</option>
+                <option>凉山州</option>
+            </select>
+            <button class="btn btn-warning chose_enter">搜索</button>
+        </div>
+    </div>
+    <div class="index_tabs">
+        <!--页面1-->
+        <div class="inner" style="height: 109%;">
+            <!--左侧块-->
+            <div class="left_cage">
+                <!--二级监控位-->
+                <div class="dataAllBorder01 cage_cl" style="margin-top: 9% !important; height: 24%;">
+                    <video id="video2" controls="controls" muted="muted" autoplay loop="loop"
+                           class="dataAllBorder02 video_cage">
+                    </video>
+                </div>
+                <!--三级监控位-->
+                <div class="dataAllBorder01 cage_cl" style="margin-top: 1.5% !important; height: 38%;">
+                    <div class="dataAllBorder02">
+                        <!--循环监控03-->
+                        <video id="video3" controls="controls" muted="muted" autoplay loop="loop" class="video_around"
+                               title="循环监控03" style="margin-right: 1%; margin-bottom: 1%">
+                        </video>
+                        <!--循环监控04-->
+                        <video id="video4" controls="controls" muted="muted" autoplay loop="loop" class="video_around"
+                               title="循环监控04"
+                               style="margin-bottom: 1%">
+                        </video>
+                        <!--循环监控05-->
+                        <video id="video5" controls="controls" muted="muted" autoplay loop="loop" class="video_around"
+                               title="循环监控05"
+                               style="margin-right: 1%">
+                        </video>
+                        <!--循环监控06-->
+                        <video id="video6" controls="controls" muted="muted" autoplay loop="loop" class="video_around"
+                               title="循环监控06">
+                        </video>
+                    </div>
+                </div>
+                <!--滚动报警-->
+                <div class="dataAllBorder01 cage_cl"
+                     style="margin-top: 1.5% !important; height: 32%; position: relative;">
+                    <div class="dataAllBorder02" style="padding: 1.2%; overflow: hidden">
+                        <div class="message_scroll_box">
+                            <!--报警1-->
+                            <div class="message_scroll">
+                                <div class="scroll_top">
+                                    <span class="scroll_title">实时报警信息</span>
+                                    <button class="scroll_level btn btn-danger">一级</button>
+                                    <span class="scroll_timer">2020-09-13  09:06:52</span>
+                                </div>
+                                <div class="msg_cage">
+                                    <span style="color: white">设备：正门 （192.168.0.10）</span>
+                                </div>
+                                <div class="msg_cage">
+                                    <span style="color: #ec3939">类型：火焰报警</span>
+                                </div>
+                            </div>
+                            <!--报警2-->
+                            <div class="message_scroll">
+                                <div class="scroll_top">
+                                    <span class="scroll_title">实时报警信息</span>
+                                    <button class="scroll_level btn btn-warning">二级</button>
+                                    <span class="scroll_timer">2020-09-13  09:16:52</span>
+                                </div>
+                                <div class="msg_cage">
+                                    <span style="color: white">设备：办公区 （192.168.0.24）</span>
+                                </div>
+                                <div class="msg_cage">
+                                    <span style="color: #ec8739">类型：遮挡报警</span>
+                                </div>
+                            </div>
+                            <!--报警3-->
+                            <div class="message_scroll">
+                                <div class="scroll_top">
+                                    <span class="scroll_title">实时报警信息</span>
+                                    <button class="scroll_level btn btn-success">三级</button>
+                                    <span class="scroll_timer">2020-09-13  09：25：24</span>
+                                </div>
+                                <div class="msg_cage">
+                                    <span style="color: white">设备：会议室 （192.168.0.30）</span>
+                                </div>
+                                <div class="msg_cage">
+                                    <span style="color: #54ec39">类型：异物入侵</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--中间块-->
+            <div class="center_cage">
+                <!--主监控-->
+                <div class="dataAllBorder01 cage_cl"style="margin-top: 3.5% !important; height: 62.7%; position: relative;">
+                    <div class="dataAllBorder02" style="position: relative; overflow: hidden;">
+                        <!--标题栏-->
+                        <div class="map_title_box" style="height: 6%">
+                            <div class="map_title_innerbox">
+                                <div class="map_title">主视频</div>
+                            </div>
+                        </div>
+                        <!--主监控位-->
+                        <video id="video1" controls="controls" muted="muted" autoplay loop="loop" class="dataAllBorder02 video_cage" style="height: 85%">
+                        </video>
+                        <!--工具栏-->
+                        <div class="map_tool_outbox">
+                            <span class="map_tool">
+                                    <a class="map_tool_inner addition_check_btn check_btn"  onclick="addressCheck()"
+                                    title="地址检索" style="background-position-x:-252px"></a>
+                                </span>
+                            <span class="map_tool">
+                                    <a class="map_tool_inner chemistry_check_btn check_btn" onclick="chemistryCheck()"
+                                       title="危化品检索" style="background-position-x:-288px"></a>
+                                </span>
+                            <span class="map_tool">
+                                    <a class="map_tool_inner enterprise_check_btn check_btn" onclick="enterpriseCheck()"
+                                       title="企业检索" style="background-position-x:-324px"></a>
+                                </span>
+                            <span class="map_tool">
+                                    <a class="map_tool_inner car_check_btn check_btn" onclick="carCheck()" title="车辆检索"
+                                       style="background-position-x:-360px"></a>
+                                </span>
+                            <span class="map_tool">
+                                    <a class="map_tool_inner" onclick="cancel()" id="fresh_tool" title="清空"
+                                       style="background-position-x:-396px"></a>
+                                </span>
+                        </div>
+                    </div>
+                </div>
+                <!--历史数据-->
+                <div class="dataAllBorder01 cage_cl" style="margin-top: 0.6% !important; height: 32.1%;">
+                    <div class="dataAllBorder02" id="map_title_innerbox">
+                        <div class="map_title_box">
+                            <div class="map_title_innerbox">
+                                <div class="map_title" style="background-image: url(img/second_title.png);">历史报警波动</div>
+                            </div>
+                        </div>
+                        <div id="historicalData" style="height: 90%;width: 100%"></div>
+                    </div>
+                </div>
+            </div>
+            <!--右侧块-->
+            <div class="right_cage">
+                <!--三级监控位-->
+                <div class="dataAllBorder01 cage_cl" style="margin-top: 9% !important; height: 24%;">
+                    <div class="dataAllBorder02">
+<!--                        &lt;!&ndash;循环监控07&ndash;&gt;-->
+<!--                        <video id="video7" controls="controls" muted="muted" autoplay loop="loop" class="video_around"-->
+<!--                               title="循环监控07" style="margin-right: 1%; margin-bottom: 1%">-->
+<!--                        </video>-->
+<!--                        &lt;!&ndash;循环监控08&ndash;&gt;-->
+<!--                        <video id="video8" controls="controls" muted="muted" autoplay loop="loop" class="video_around"-->
+<!--                               title="循环监控08"-->
+<!--                               style="margin-bottom: 1%">-->
+<!--                        </video>-->
+<!--                        &lt;!&ndash;循环监控09&ndash;&gt;-->
+<!--                        <video id="video9" controls="controls" muted="muted" autoplay loop="loop" class="video_around"-->
+<!--                               title="循环监控09"-->
+<!--                               style="margin-right: 1%">-->
+<!--                        </video>-->
+<!--                        &lt;!&ndash;循环监控10&ndash;&gt;-->
+<!--                        <video id="video10" controls="controls" muted="muted" autoplay loop="loop" class="video_around"-->
+<!--                               title="循环监控10">-->
+<!--                        </video>-->
+                        <video autoplay="autoplay" loop="loop" class="dataAllBorder02">
+                            <source class="video" title="主监控位" src="video/test_mv02.mov"/>
+                        </video>
+                    </div>
+                </div>
+
+                <!--数据统计-->
+                <div class="dataAllBorder01 cage_cl" style="margin-top: 1.5% !important; height: 38%">
+                    <div class="dataAllBorder02" id="cage_cl">
+                        <!--每日流量-->
+                        <div class="analysis">每日流量：</div>
+                        <ul class="data_show_box">
+                            <li class="data_cage">0</li>
+                            <li class="data_cage">3</li>
+                            <li class="data_cage" style="background-image: none;">,</li>
+                            <li class="data_cage">5</li>
+                            <li class="data_cage">6</li>
+                            <li class="data_cage">G</li>
+                        </ul>
+                        <!--其它数据-->
+                        <div class="depart_number_box">
+                            <!--推流流量-->
+                            <ul class="depart_number_cage">
+                                <li class="depart_name">推流流量：</li>
+                                <li class="depart_number">1,238G</li>
+                            </ul>
+                            <!--播放流量-->
+                            <ul class="depart_number_cage">
+                                <li class="depart_name">播放流量：</li>
+                                <li class="depart_number">3,630G</li>
+                            </ul>
+                            <!--下载次数-->
+                            <ul class="depart_number_cage" style="margin-bottom: 0px;">
+                                <li class="depart_name">下载次数：</li>
+                                <li class="depart_number">251次</li>
+                            </ul>
+                            <!--用户数-->
+                            <ul class="depart_number_cage" style="margin-bottom: 0px;">
+                                <li class="depart_name">用户数：</li>
+                                <li class="depart_number">132,324</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!--饼图-->
+                <div class="dataAllBorder01 cage_cl check_decrease"style="margin-top: 1.5% !important; height: 32%; position: relative;">
+                    <div class="dataAllBorder02 over_hide" style="padding: 1.2%;">
+                        <div class="analysis">探测器应用场景占比：</div>
+                        <!--饼图详情-->
+                        <div class="danger_contain_box">
+                            <div id="container_huan" style="height: 100%;width: 100%"></div>
+                        </div>
+                        <!--增长数据-->
+                        <div class="danger_depart_box">
+                            <!--增长数据1-->
+                            <ul class="danger_depart">
+                                <li class="danger_ico" style="background-image: url(img/pic_ico_02.png); background-position-x: 0px"></li>
+                                <li class="data_name">轨道使用量</li>
+                                <li class="data data01">536,235</li>
+                                <li class="data data02">↑&nbsp&nbsp4.7%</li>
+                            </ul>
+                            <!--占位-->
+                            <ul class="danger_depart"></ul>
+                            <!--增长数据2-->
+                            <ul class="danger_depart danger_depart01">
+                                <li class="danger_ico" style="background-image: url(img/pic_ico_03.png); background-position-x: 0px"></li>
+                                <li class="data_name">工厂使用量</li>
+                                <li class="data data01">42,423</li>
+                                <li class="data data02">↑&nbsp&nbsp5%</li>
+                            </ul>
+                            <!--增长数据3-->
+                            <ul class="danger_depart danger_depart01">
+                                <li class="danger_ico"style="background-image: url(img/pic_ico_01.png); background-position-x: 0px"></li>
+                                <li class="data_name">森林使用量</li>
+                                <li class="data data01">23,652</li>
+                                <li class="data data02">↑&nbsp&nbsp29.1%</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--页面2-->
+        <div class="inner" style="display: none;">
+            <!--左侧块1-->
+            <div class="data_left01">
+                <div class="dataAll maginS">
+                    <div class="dataAllBorder01">
+                        <div class="dataAllBorder02">
+                            <div class="data_tit1">xxxxx分析</div>
+                            <div class="data_chart" id="buyTime"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dataAll">
+                    <div class="dataAllBorder01">
+                        <div class="dataAllBorder02">
+                            <div class="data_tit1">xxxxx类型分析</div>
+                            <p class="data_chart" id="Package01"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="dataAll">
+                    <div class="dataAllBorder01">
+                        <div class="dataAllBorder02">
+                            <div class="data_tit1">xxxxx分析</div>
+                            <p class="data_chart" id="rode01"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--左侧块2-->
+            <div class="data_left02">
+                <div class="dataAll01">
+                    <div class="dataAllBorder01">
+                        <div class="dataAllBorder02">
+                            <div class="data_tit2">数据汇总</div>
+                            <p class="data_chart" id="piePiont"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="dataAll02">
+                    <div class="dataAllBorder01">
+                        <div class="dataAllBorder02">
+                            <div class="data_tit1">xxxxx分析</div>
+                            <p class="data_chart" id="rodeAbook"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--右侧块1-->
+            <div class="data_left01">
+                <div class="dataAll maginS">
+                    <div class="dataAllBorder01">
+                        <div class="dataAllBorder02">
+                            <div class="data_tit1">111分析</div>
+                            <p class="data_chart" id="bookAret"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="dataAll">
+                    <div class="dataAllBorder01">
+                        <div class="dataAllBorder02">
+                            <div class="data_tit1">xxxxxxx分析</div>
+                            <p class="data_chart" id="bookBmonth"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="dataAll">
+                    <div class="dataAllBorder01">
+                        <div class="dataAllBorder02">
+                            <div class="data_tit1">xxxxxxx分析</div>
+                            <p class="data_chart" id="whearAbook"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--右侧块2-->
+            <div class="data_left01">
+                <div class="dataAll maginS">
+                    <div class="dataAllBorder01">
+                        <div class="dataAllBorder02">
+                            <div class="data_tit1">xxxxx分析</div>
+                            <p class="data_chart" id="seaAbook01"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="dataAll">
+                    <div class="dataAllBorder01">
+                        <div class="dataAllBorder02">
+                            <div class="data_tit1">xxxxx订单分析</div>
+                            <p class="data_chart" id="actionBook"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="dataAll">
+                    <div class="dataAllBorder01">
+                        <div class="dataAllBorder02">
+                            <div class="data_tit1">xxxxxx分析</div>
+                            <p class="data_chart" id="sperceBook01"></p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!--页面3-->
+        <div class="inner" style="display:none">
+            <!--左侧块-->
+            <div class="data_left03">
+                <div class="dataAllNo01 maginS01">
+                    <div class="dataAllBorder01">
+                        <div class="dataAllBorder02">
+                            <div class="data_tit3">收入渠道分析</div>
+                            <p style="width: 100%;height: 100%" id="zhanbi02"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--中间块-->
+            <div class="data_left04">
+                <div class="dataAllNo01">
+                    <div class="dataAllBorder01">
+                        <div class="dataAllBorder02">
+                            <div class="data_tit3">营销投入与销售量分析</div>
+                            <p style="width: 110%;height: 95%" id="allAly03"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--右侧块-->
+            <div class="data_left03">
+                <div class="dataAllNo01 maginS01">
+                    <div class="dataAllBorder01">
+                        <div class="dataAllBorder02">
+                            <div class="data_tit3">支出渠道分析</div>
+                            <p style="width: 100%;height: 95%" id="zhanbi03"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--页面6-->
+        <div class="inner" style="display: none">
+            <div class="clear"></div>
+            <div class="data_left05">
+                <div class="dataAllNo02 ">
+                    <div class="dataAllBorder01">
+                        <div class="dataAllBorder02">
+                            <div class="data_tit">xxxxxxx分析</div>
+                            <p class="data_chart02" id="shijian01"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="data_left05">
+                <div class="dataAllNo02 ">
+                    <div class="dataAllBorder01">
+                        <div class="dataAllBorder02">
+                            <div class="data_tit">xxxxx分析</div>
+                            <p class="data_chart02" id="shijian03"></p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="clear"></div>
+            <div class="data_left05">
+                <div class="dataAllNo02">
+                    <div class="dataAllBorder01">
+                        <div class="dataAllBorder02">
+                            <div class="data_tit">xxxx分析</div>
+                            <p class="data_chart02" id="shijian02"></p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="data_left05">
+                <div class="dataAllNo02">
+                    <div class="dataAllBorder01">
+                        <div class="dataAllBorder02">
+                            <div class="data_tit">xxxxxx分析</div>
+                            <p class="data_chart03" id="shijian04"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--页面5-->
+        <div class="inner" style="display: none">
+            <!--左侧块-->
+            <div class="manage_left l_left">
+                <div class="manage_line1">
+                    <div class="manage_line2">
+                        <div class="manage_top_middle">
+                            <table class="table table-bordered">
+                                <tbody>
+                                <tr>
+                                    <td>xxxx总数</td>
+                                    <td colspan="3">25414人</td>
+                                </tr>
+                                <tr>
+                                    <td>xxxxx</td>
+                                    <td colspan="3">省内游客</td>
+                                </tr>
+                                <tr>
+                                    <td>xxxxx</td>
+                                    <td colspan="3">青年</td>
+                                </tr>
+                                <tr>
+                                    <td>男性游客</td>
+                                    <td>5424人</td>
+                                    <td>女性游客</td>
+                                    <td>5457人</td>
+                                </tr>
+                                <tr>
+                                    <td>团队游客</td>
+                                    <td>5424人</td>
+                                    <td>散客</td>
+                                    <td>5457人</td>
+                                </tr>
+                                <tr>
+                                    <td>同比</td>
+                                    <td>下降5%</td>
+                                    <td>环比</td>
+                                    <td>上升5.6%</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <p>xxxxx数据汇总</p>
+                        </div>
+                        <div class="manage_left_top">
+                            <div class="manage_top_left l_left">
+                                <div id="container2" style="height: 90%"></div>
+                                <p>xxxxx分析</p>
+                            </div>
+                            <div class="manage_top_left l_left">
+                                <div id="container1" style="height: 90%"></div>
+                                <p>xxxx分析</p>
+                            </div>
+                            <div class="manage_top_left l_left">
+                                <div id="container3" style="height:90%"></div>
+                                <p>xxxx分析</p>
+                            </div>
+
+                        </div>
+                        <div class="manage_top_middle">
+                            <div id="container4" style="height: 90%"></div>
+                            <p>xxxx数据分析</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--中间块-->
+            <div class="manage_left l_left">
+                <div class="manage_line1">
+                    <div class="manage_line2">
+                        <div class="manage_top_middle l_left">
+                            <div id="container9" style="height: 90%"></div>
+                            <p>xxxx情况</p>
+                        </div>
+                        <div class="manage_top_middle l_left">
+                            <div id="container10" style="height: 90%"></div>
+                            <p>xxxx分析</p>
+                        </div>
+                        <div class="manage_top_middle l_left">
+                            <div id="container11" style="height: 90%"></div>
+                            <p>xxxx分析</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--右侧块-->
+            <div class="manage_left l_left">
+                <div class="manage_line1">
+                    <div class="manage_line2">
+                        <div class="manage_top_middle">
+                            <div id="container12" style="height: 90%"></div>
+                            <p>xxxxx排行</p>
+                        </div>
+                        <div class="manage_top_middle">
+                            <div id="container6" style="height: 90%"></div>
+                            <p>xxxx数据分析</p>
+                        </div>
+                        <div class="manage_top_middle l_left">
+                            <div id="container5" style="height: 90%"></div>
+                            <p>xxxxx数据分析</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--页面4-->
+        <div class="inner" style="display: none;">
+            <!--左侧块-->
+            <div class="user_left l_left" style=" margin-left: 0.6%">
+                <div class="user_line1">
+                    <div class="user_line2">
+                        <div class="user_top_middle">
+                            <table class="table table-bordered">
+                                <tbody>
+                                <tr>
+                                    <td>xxxx总数</td>
+                                    <td colspan="3">965人</td>
+                                </tr>
+                                <tr>
+                                    <td>xxxx工作人员</td>
+                                    <td>625人</td>
+                                    <td>xxxx工作人员</td>
+                                    <td>340人</td>
+                                </tr>
+                                <tr>
+                                    <td>xxxx</td>
+                                    <td>急救部</td>
+                                    <td>xxxx工作人员</td>
+                                    <td>xxx（99%）</td>
+                                </tr>
+                                <tr>
+                                    <td>xxx</td>
+                                    <td>售票部</td>
+                                    <td>xxxx</td>
+                                    <td>安保部</td>
+                                </tr>
+                                <tr>
+                                    <td>xxx</td>
+                                    <td>李焕</td>
+                                    <td>xxx</td>
+                                    <td>周伟</td>
+                                </tr>
+                                <tr>
+                                    <td>xxxx主要原因</td>
+                                    <td>人为损坏</td>
+                                    <td>xxx处理情况</td>
+                                    <td>均及时进行设备处理</td>
+                                </tr>
+                                <!--<tr>-->
+                                <!--<td>年度最佳员工</td>-->
+                                <!--<td>李进</td>-->
+                                <!--<td>重点观察员工</td>-->
+                                <!--<td>周伟</td>-->
+                                <!--</tr>-->
+
+                                </tbody>
+                            </table>
+                            <p>xxx管理汇总</p>
+                        </div>
+                        <div class="user_left_top">
+                            <div class="user_top_left l_left">
+                                <div id="userContainerSex" style="height: 90%"></div>
+                                <p>工作人员性别占比</p>
+                            </div>
+                            <div class="user_top_left l_left">
+                                <div id="userContainerManage" style="height: 90%"></div>
+                                <p>各部门人员占比</p>
+                            </div>
+                            <div class="user_top_left l_left">
+                                <div id="userContainerAge" style="height:90%"></div>
+                                <p>工作人员年龄段占比</p>
+                            </div>
+
+                        </div>
+                        <div class="user_top_middle">
+                            <div id="userContainerAttendance" style="height: 90%"></div>
+                            <p>景区各部门出勤情况</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--中间块-->
+            <div class="user_left l_left" style=" margin-left: 0.6%">
+                <div class="user_line1">
+                    <div class="user_line2">
+                        <div class="user_top_middle l_left">
+                            <div id="userContainerPersonal" style="height: 90%"></div>
+                            <p>xxx排行</p>
+                        </div>
+                        <div class="user_top_middle l_left">
+                            <div id="userContainerFlow" style="height: 90%"></div>
+                            <p>xxx分析</p>
+                        </div>
+                        <div class="user_top_middle l_left">
+                            <div id="userContainerIllegal" style="height: 90%"></div>
+                            <p>xxxx分析</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--右侧块-->
+            <div class="user_left l_left" style=" margin-left: 0.6%">
+                <div class="user_line1">
+                    <div class="user_line2">
+                        <div class="user_top_middle">
+                            <div id="userContainerComplaint" style="height: 90%"></div>
+                            <p>xxxx情况</p>
+                        </div>
+                        <div class="user_top_middle">
+                            <div id="userContainerPrize" style="height: 90%"></div>
+                            <p>xxx分析</p>
+                        </div>
+                        <div class="user_top_middle l_left">
+                            <div class="user_right_left l_left">
+                                <div id="userContainerReason" style="height: 90%"></div>
+                                <p>xxx原因分析</p>
+                            </div>
+                            <div class="user_right_left l_left">
+                                <div id="userContainerHandle" style="height: 90%"></div>
+                                <p>故障处理情况</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--背景动画-->
+<canvas id="canvas" style="position: absolute;top: 0;left: 0;z-index: -1"></canvas>
+</body>
+
+<script src="js/jquery.js"></script>
+<script src="js/laydate.js"></script>
+<script src="js/Home_page.js"></script>
+<script type="text/javascript" src="js/bg.js"></script>
+<script src="js/echarts.js"></script>
+<script src="js/index.js"></script>
+<script src="js/bstable/js/bootstrap.min.js"></script>
+<script src="js/bstable/js/bootstrap-table.js"></script>
+<script type="text/javascript" src="js/jquery.pagination.js"></script>
+<script src="js/bstable/js/bootstrap-table-zh-CN.min.js"></script>
+<script src="js/Home_page.js"></script>
+<script src="js/artDialog/artDialog.js"></script>
+<script src="js/artDialog/plugins/iframeTools.source.js"></script>
+<script src="js/self.js"></script>
+<script src="js/flv.js"></script>
+<script src="js/showflv.js"></script>
+</html>
